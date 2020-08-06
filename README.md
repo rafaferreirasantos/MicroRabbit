@@ -1,0 +1,2 @@
+# MicroRabbit
+Learning RabbitMQ
