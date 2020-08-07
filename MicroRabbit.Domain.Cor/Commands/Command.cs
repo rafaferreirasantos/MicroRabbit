@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MicroRabbit.Domain.Cor.Events;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
