@@ -27,11 +27,15 @@ namespace MicroRabbit.Banking.Api
     // This method gets called by the runtime. Use this method to add services to the container.
     public void ConfigureServices(IServiceCollection services) {
       services.AddControllers();
-      services.AddMediatR(typeof(Startup));
 
       services.AddDbContext<BankingDbContext>(options => {
         options.UseSqlServer(Configuration.GetConnectionString("BankingDbConnection"));
       });
+
+      services.AddSwaggerGen(c => {
+        c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "Banking Microservice", Version = "v1" });
+      });
+      services.AddMediatR(typeof(Startup));
 
       RegisterServices(services);
     }
@@ -49,6 +53,11 @@ namespace MicroRabbit.Banking.Api
       app.UseRouting();
 
       app.UseAuthorization();
+
+      app.UseSwagger();
+      app.UseSwaggerUI(c => {
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Banking Microservice V1");
+      });
 
       app.UseEndpoints(endpoints => {
         endpoints.MapControllers();
