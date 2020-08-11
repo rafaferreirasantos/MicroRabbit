@@ -1,0 +1,6 @@
+FROM mcr.microsoft.com/dotnet/core/sdk
+LABEL version="1.0.1" description="Web API Bank"
+COPY dist /app
+WORKDIR /app
+EXPOSE 80/tcp
+ENTRYPOINT ["dotnet", "MicroRabbit.Banking.Api.dll"]
