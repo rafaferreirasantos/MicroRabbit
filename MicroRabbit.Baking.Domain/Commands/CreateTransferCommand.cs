@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace MicroRabbit.Baking.Domain.Commands
+namespace MicroRabbit.Banking.Domain.Commands
 {
   public class CreateTransferCommand : TransferCommand
   {

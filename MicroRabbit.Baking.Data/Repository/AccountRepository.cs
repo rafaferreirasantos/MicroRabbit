@@ -1,11 +1,11 @@
-﻿using MicroRabbit.Baking.Data.Context;
-using MicroRabbit.Baking.Domain.Interfaces;
-using MicroRabbit.Baking.Domain.Models;
+﻿using MicroRabbit.Banking.Data.Context;
+using MicroRabbit.Banking.Domain.Interfaces;
+using MicroRabbit.Banking.Domain.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace MicroRabbit.Baking.Data.Repository {
+namespace MicroRabbit.Banking.Data.Repository {
   public class AccountRepository : IAccountRepository {
     private BankingDbContext _ctx;
     public AccountRepository(BankingDbContext ctx) {

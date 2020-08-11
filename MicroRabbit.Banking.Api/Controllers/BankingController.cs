@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using MicroRabbit.Baking.Domain.Models;
+using MicroRabbit.Banking.Domain.Models;
 using MicroRabbit.Banking.Application.Interfaces;
 using MicroRabbit.Banking.Application.Models;
 using Microsoft.AspNetCore.Mvc;

@@ -1,4 +1,4 @@
-﻿using MicroRabbit.Baking.Domain.Models;
+﻿using MicroRabbit.Banking.Domain.Models;
 using MicroRabbit.Banking.Application.Models;
 using System;
 using System.Collections.Generic;

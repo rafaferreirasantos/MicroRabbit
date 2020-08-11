@@ -1,6 +1,6 @@
-﻿using MicroRabbit.Baking.Domain.Commands;
-using MicroRabbit.Baking.Domain.Interfaces;
-using MicroRabbit.Baking.Domain.Models;
+﻿using MicroRabbit.Banking.Domain.Commands;
+using MicroRabbit.Banking.Domain.Interfaces;
+using MicroRabbit.Banking.Domain.Models;
 using MicroRabbit.Banking.Application.Interfaces;
 using MicroRabbit.Banking.Application.Models;
 using MicroRabbit.Domain.Core.Bus;
